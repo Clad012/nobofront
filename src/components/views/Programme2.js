@@ -38,7 +38,7 @@ class Programme2 extends Component {
     handleSubmit(event) {
         event.preventDefault();
         let dateFin = this.state.date_fin ? '&date_fin='+this.state.date_fin : '';
-        this.props.programme2(`chaine=${this.state.date_debut}${dateFin}`);
+        this.props.programme2(`date_debut=${this.state.date_debut}${dateFin}`);
     }
     render() {
         return (
@@ -67,10 +67,10 @@ class Programme2 extends Component {
                         <span className="sr-only">Loading...</span>
                     </Spinner></div>)}
 
-                    {this.props.resulB && (
+                    {this.props.result && (
                             <div className="result mt-2">
                                 <Alert variant="primary">
-                                    {this.props.errors}
+                                    Résultat: {this.props.result} jours
                                 </Alert>
                             </div>)}
                     {this.props.errors && (

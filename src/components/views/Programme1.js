@@ -75,7 +75,7 @@ class Programme1 extends Component {
                     {this.props.resulA && (
                             <div className="result mt-2">
                                 <Alert variant="primary">
-                                    {this.props.errors}
+                                    Résultat: {this.props.resulA}
                                 </Alert>
                             </div>)}
                     {this.props.errors && (

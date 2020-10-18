@@ -43,7 +43,7 @@ class Programme1 extends Component {
                   {this.props.programmes.map(programme => (
                     <tr key={programme.date}>
                         <td>{programme.programme}</td>
-                        <td>{programme.donnee}</td>
+                        <td>{programme.donnees}</td>
                         <td>{programme.resultat}</td>
                         <td>{programme.date}</td>
                     </tr>

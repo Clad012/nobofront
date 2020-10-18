@@ -23,6 +23,7 @@ function* fetchHistory(action) {
 function* handleProgram1(action) {
    try {
       const result = yield call(getApi, 'programme1', action.payload);
+      console.log(result);
       yield put({type: 'PROGRAM1_SUCCESS', result: result});
    } catch (e) {
       yield put({type: 'PROGRAM2_FAILED', message: e.message});
